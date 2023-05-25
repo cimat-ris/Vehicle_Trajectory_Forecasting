@@ -15,19 +15,19 @@ from Code.utils import save_utils as dl
 from Code.utils.save_utils import load_pkl_data
 
 # PATH
-dataroot_base = '/data/sets/nuscenes'
-dataroot_train = '/media/juan/Elements'
+##dataroot_base = '/data/sets/nuscenes'
+##dataroot_train = '/media/juan/Elements'
 
 # dataset attributes
-dataroot = dataroot_train + dataroot_base
+##dataroot = dataroot_train + dataroot_base
 # dataroot = dataroot_base
 
 # VERSION
-version = 'v1.0-trainval'
+##version = 'v1.0-trainval'
 # version = 'v1.0-mini'
 
 # NAME
-data_name = 'val'
+##ata_name = 'val'
 # data_name = 'mini_train'
 
 
@@ -97,9 +97,9 @@ data_name = 'val'
 ###plt.show()
 
 
-dataroot = '/data/shifts/data/train'
-shifts_pickle_filename = '/data/shifts/val/data_chunk1.pkl'
-datas = load_pkl_data(shifts_pickle_filename)
+dataroot = '/datasets/Shifts/data/train/'
+#shifts_pickle_filename = '/data/shifts/val/data_chunk1.pkl'
+#datas = load_pkl_data(shifts_pickle_filename)
 shifts_loader = ShiftsLoader(DATAROOT=dataroot, pickle=True, pickle_filename=shifts_pickle_filename)
 shifts_inputQuery = InputQuery(shifts_loader)
 shifts_bitmap = ShiftsBitmap()
