@@ -98,7 +98,7 @@ from Code.utils.save_utils import load_pkl_data
 
 
 dataroot = '/datasets/Shifts/data/train/'
-#shifts_pickle_filename = '/data/shifts/val/data_chunk1.pkl'
+shifts_pickle_filename = '/datasets/Shifts/data/val/data_chunk1.pkl'
 #datas = load_pkl_data(shifts_pickle_filename)
 shifts_loader = ShiftsLoader(DATAROOT=dataroot, pickle=True, pickle_filename=shifts_pickle_filename)
 shifts_inputQuery = InputQuery(shifts_loader)
